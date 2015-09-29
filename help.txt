@@ -1,0 +1,27 @@
+Jeeves help file:
+###COMMANDS###
+mb bookmarkname   ----   makes a bookmark with a certain name, you will be asked for a link in the process
+ob bookmarkname   ----   opens a bookmark in the web browser, if not there you will be notified
+mbg bookmarkgroupname   ----   makes a bookmarkgroup, enter links and use it in the future
+obg bookmarggroupname   ----   open all links within one bookmarkgroup
+##########################################################################################################
+
+Description:
+People live in a routine. Every day you open your webbrowser, you mostly access a particular group of websites, depending on what you are planning to do today.
+For example:
+I am a student, so when it's my free time, I usually always open Facebook, Gmail and YouTube.
+When I need to study, I open a couple of electric engineering related sites (including my faculty website)
+When I want to learn Python, I open Python Documentation, StackOverflow etc.
+
+With this little script, you can mark a bookmark group, for example fun and add all the websites you use when you want to have fun.
+That can be done by entering: mbg fun
+When done so, you will be asked to enter websites you want to put i the bookmark group, each time you enter a website press enter and when you're done, press enter on
+empty (blank) line.
+When done so, script saves the bookmark and now it's accessible and usable.
+
+So when you want to access it, simply type: obg fun
+
+The script opens your web browser, opening all sites you have added previously.
+
+You can also add individual bookmarks, even though it's easier to add it to browsers, but the idea of this is not needing to IMPORT/EXPORT them all the time, when you can
+simply carry this lightweight script with you on your USB drive or something where all your bookmarks are safe from being deleted etc.
