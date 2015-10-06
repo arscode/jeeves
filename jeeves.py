@@ -37,9 +37,12 @@ def workflow():
             print "#!# Exiting..."
             break
         order=order.split()
-        assert (len(order)==2 or order[0]=="help"),"Invalid instructions!"
         if order[0]!="help":  #we have to explicitly ask for help because it's len is 1 so it would return an error at the line below
-            command,arg=order[0],order[1]  #we separate command and argument
+            try:
+                command,arg=order[0],order[1]  #we separate command and argument
+            except:
+                print "Invalid instructions!"
+                continue
             if command=="mb":
                 print "#!# Enter web address you want to bind to this bookmark"
                 print "#?#",
@@ -119,6 +122,7 @@ def openBookmarkGroup(name):
         print "#+# Bookmark found! Opening links..."
     except IOError as e:
         print "#-# Bookmark not found, try making one!"
+        return
     for link in stream:
         webbrowser.open(link)
 ###############################################################################################################################################    
